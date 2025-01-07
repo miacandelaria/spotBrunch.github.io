@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Account</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            background-color: #F5F5F5;
+            font-family: Arial, sans-serif;
+            color: #A70000;
+            height: 100%;
+        }
+
+        .container {
+            width: 60%;
+            max-width: 800px;
+            background-color: #FFF;
+            padding: 20px;
+            border: 2px solid #A70000;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+        }
+
+        .menu {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .menu a {
+            color: #A70000;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .menu a:hover {
+            text-decoration: underline;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        fieldset {
+            border: 2px solid #A70000;
+            margin: 15px 0;
+            border-radius: 5px;
+            padding: 15px;
+            text-align: left;
+        }
+
+        legend {
+            font-weight: bold;
+            color: #A70000;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="date"],
+        input[type="email"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #A70000;
+            border-radius: 5px;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        button {
+            background-color: #A70000;
+            color: #FFF;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 5px;
+        }
+
+        button:hover {
+            background-color: #8B0000;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: white;
+            background-color: #4C6B5D;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <a href="aboutUs_pr2.html">About Us</a>
+            <a href="menu_pr2.html">| Menu</a>
+            <a href="timetable_pr2.html">| Timetable</a>
+            <a href="account_pr2.html">| Account</a>
+        </div>
+        <h2>Create an Account</h2>
+
+        <form>
+            <fieldset>
+                <legend>Access data</legend>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username">
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password">
+            </fieldset>
+
+            <fieldset>
+                <legend>Personal data</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address">
+
+                <label for="birthdate">Birth Date:</label>
+                <input type="date" id="birthdate" name="birthdate">
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email">
+
+                <h3>Do you have any of these conditions?</h3>
+                <input type="checkbox" id="celiac" name="condition" value="Celiac">
+                <label for="celiac">Celiac</label><br>
+                <input type="checkbox" id="diabetic" name="condition" value="Diabetic">
+                <label for="diabetic">Diabetic</label><br>
+                <input type="checkbox" id="vegan" name="condition" value="Vegan">
+                <label for="vegan">Vegan</label><br>
+                <input type="checkbox" id="lactose-intolerant" name="condition" value="Lactose Intolerant">
+                <label for="lactose-intolerant">Lactose Intolerant</label>
+            </fieldset>
+
+            <div style="text-align: center;">
+                <button type="submit">Send</button>
+                <button type="reset">Clean</button>
+            </div>
+        </form>
+
+        <footer>
+            <p>&copy; 2024 Brunch Spot</p>
+        </footer>
+    </div>
+</body>
+</html>
